@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pt Serif", serif;
+}
+.section1 {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.472)),
+    url(01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 50vh;
+  /*padding-bottom: 50px;*/
+}
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.472));
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1200;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.logo img {
+  height: 66px;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  margin-top: 20px;
+}
+.active {
+  display: block;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0 0 0;
+  vertical-align: center;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+  font-size: 28px;
+  /* top: 18%; */
+  font-family: "Montserrat", sans-serif;
+  /* text-align: center; */
+  text-transform: uppercase;
+  border: 3px solid #111;
+  /* box-sizing: inherit; */
+  font-weight: 700;
+  /* margin: auto; */
+  /* width: 50%; */
+  padding: 10px 10px;
+}
+.about-info {
+  /* display: block;
+  position: relative; */
+  font-size: 20px;
+  /* margin-left: 18%; */
+  /* top: 25%;
+  margin-right: 15%; */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #7a7a7a;
+  font-weight: normal;
+  line-height: 25px;
+  padding: 30px 40px 0px 40px;
+}
+.text-center {
+  text-align: center;
+  font-size: 17px;
+  color: #7a7a7a;
+  font-weight: normal;
+  line-height: 25px;
+  font-family: "Pt Serif", serif;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.tag-line {
+  letter-spacing: 0.5em;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.tag-line {
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+.section3 {
+  display: flex;
+  flex-direction:column;
+  padding: 80px 0;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.responsibilities {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin-left: 15%;
+  top: 10%;
+}
+.res p {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  margin-left: 18%;
+  margin-top: 5%;
+  margin-right: 15%;
+  text-align: justify;
+}
+.Requirements {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin-left: 15%;
+  margin-top: 3%;
+  top: -10%;
+}
+.req {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  margin-left: 18%;
+  margin-right: 15%;
+  text-align: justify;
+  top: -8%;
+}
+.points_of_responsibilities {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  margin-left: 22%;
+  margin-right: 15%;
+  text-align: justify;
+}
+.section4 {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction:column;
+  padding: 80px 0;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+.section4 .Eligibility {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin-left: 15%;
+  top: 12%;
+}
+.Eligibility-info {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  margin-left: 20%;
+  margin-right: 15%;
+  text-align: justify;
+  top: 14%;
+}
+.Benefits {
+  margin-top: 3%;
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin-left: 15%;
+  top: 22%;
+}
+.points_of_Benefits {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  margin-left: 20%;
+  margin-right: 15%;
+  text-align: justify;
+  top: 24%;
+}
+.Start_Dates {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin-left: 15%;
+  margin-top: 3%;
+}
+.Start_Dates_points {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  margin-left: 20%;
+  margin-right: 15%;
+  text-align: justify;
+  margin-top: 25px;
+}
+
+
+
+@media screen and (min-width: 894px) {
+  .section1 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.472)),
+    url(01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  /* padding-bottom: 50px; */
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    z-index: 1200;
+    background-image: none;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+  }
+  .logo {
+    margin-top: 0;
+    margin-left: 10%;
+    height: 66px;
+    margin-top: 7px;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: #03a9f4;
+    transition: 0.2s ease-in-out;
+  }
+}
