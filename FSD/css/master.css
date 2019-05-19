@@ -1,8 +1,9 @@
 html {
-    font-family: 'Montserrat', 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 14px;
     letter-spacing: 1;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -12,16 +13,16 @@ html {
 
 body {
     width: 100%;
-    position: absolute;
 }
 
 .site-wrapper {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* position: absolute; */
 }
 
 .container {
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 7%;
 }
 
 .group::before,
@@ -62,9 +63,6 @@ body {
 .logo-container img {
     max-width: 65px;
     height: 65px;
-    /* z-index: 2; */
-    /* opacity: 1; */
-    /* background-clip: content-box;  */
 }
 
 .navigation-container {
@@ -95,7 +93,23 @@ body {
 }
 
 .navigation-container a:hover {
-    color: orange;
+    color: #ff6d00;
+}
+
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menu-btn span{
+    display: block;
+    margin: 0 0 5px 0;
+    width: 30px;
+    height: 5px;
+    background-color: #FFF;
 }
 
 .description {
@@ -106,13 +120,12 @@ body {
 .main-description {
     width: 50%;
     float: left;
-    letter-spacing: 1.5;
+    /* letter-spacing: 1.5; */
 }
 
 .main-description h1 {
-    /* font-weight: 900; */
     font-size: 270%;
-    letter-spacing: 2.5;
+    /* letter-spacing: 2.5; */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -125,7 +138,7 @@ body {
 
 .description-footer {
     width: 100%;
-    margin: 10% 5% 0 5%;
+    margin: 5% 5% 0 5%;
 }
 
 .apply-btn {
@@ -134,126 +147,197 @@ body {
 }
 
 .apply-btn button {
-    padding: 12px 25px;
+    padding: 14px 27px;
     border-radius: 5px;
     color: #FFF;
     background-color: darkcyan;
     border: none;
     outline: none;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 1;
     font-size: 105%;
     cursor: pointer;
-    font-family: 'Montserrat', 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif;
+}
+.apply-btn , .label{
+    display: inline-block;
+    vertical-align: middle;
+    float: initial; 
 }
 
-.side-description {
+/* .side-description {
     width: 60%;
     float: left;
     letter-spacing: 1.5;
-}
+} */
 
 .section {
     width: 100%;
-    /* height: 100vh; */
-    /* line-height: 1.2; */
-    /* font-size: 12px; */
-    /* position: relative; */
-    margin: 5% 0 0 0;
+    padding: 5% 0 0 0;
 }
 
 .links-container {
     width: 15%;
     float: left;
-    margin: 0 5% 0 0;
-    /* position: sticky;
-    position: -webkit-sticky;
-    top: 5%; */
+    margin: 0 5% 0 7%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 15%;
+    bottom: -15%;
 }
 
 .links-container ul {
     width: 100%;
+    height: auto;
     background-color: #000;
+    border: .1px solid rgba(0, 0, 0, 1);
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); */
     padding: 10px 0;
 }
 
 .links-container li {
     list-style: none;
+    /* margin: 6% 0; */
 }
 
 .links-container a {
-    width: 80%;
-    margin: 10% 0 10% 10%;
+    width: 90%;
+    margin: 10% 5%;
     display: block;
+    padding: 5%;
+    box-sizing: border-box;
+    font-size: 90%;
+    letter-spacing: 1.2;
+    position: relative;
     /* text-align: center; */
-    font-weight: 700;
+    /* font-weight: 700; */
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
     cursor: pointer;
-    font-family: 'Montserrat', 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .links-container a:hover {
-    font-weight: 300;
-    box-sizing: border-box;
-    border: 2px solid #FFF;
+    /* font-weight: 300; */
+    /* box-sizing: border-box;
+    border: 2px solid #FFF; */
+    color: #ff6d00;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: #fff;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); */
+}
+
+.links-container a:hover::before{
+    content: "";
+    height: 100%;
+    border-right: 3px solid #ff6d00;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: -7%;
 }
 
 .section-content {
-    width: 80%;
-    float: left;
+    /* width: 100%; */
+    /* float: left; */
+    text-align: justify;
+    margin: -5% 0 0 -7%;
+    /* padding: 0 0 5% 0; */
 }
 
+/* .overview{
+    
+} */
+
 .main-content {
-    margin: 5% 0 0 0;
+    /* margin: 5% 0 0 0; */
+    /* width: 100%; */
+    padding: 5% 0 5% 27%;
+    box-sizing: border-box;
 }
 
 .section-title {
-    margin: 0 0 2% 0;
+    padding: 0 0 2% 0;
     font-weight: 700;
+    color: #000;
+    /* text-transform: uppercase; */
+    /* padding: 5% 0 0 0; */
 }
 
 .section-heading h1 {
     margin: 0 0 2% 0;
+    text-align: center;
+    color: rgb(51,51,51);
+}
+.section-heading p{
+    text-align: left;
+    color: #666666;
+    font-size: 12;
+
 }
 
 .features {
     /* width: 100%; */
-    margin: 2% 0 0 0;
+    margin: 4% 0 0 0;
     margin-right: -5%;
 }
 
 .feature-container {
-    width: 45%;
+    width: 50%;
     float: left;
     height: 150px;
     padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .feature-img {
-    width: 7%;
+    width: 10%;
     float: left;
-    margin-right: 3%;
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .feature-img img {
-    max-width: 100%;
+    height: 0.49in;
+    width: 0.49in;
 }
 
 .feature-description {
-    width: 80%;
+    width: 60%;
     float: left;
+    margin-left: 20; 
+
 }
 
 .feature-description h4 {
     margin: 0 0 2% 0;
+    font-size: 14;
+    color: rgb(46,46,46);
+}
+.feature-description p{
+    font-size: 12;
+    text-align: left;
+    color: rgb(129, 129, 129);
+}
+
+.section-dark {
+    background-color: rgba(229, 229, 229, 1);
+    width: 100%;
+    /* opacity: .5; */
+}
+.feature-content{
+
+    width: 60%;
+    height: auto;
+    margin: 0 0 0 7%;
+    position: relative;
 }
 
 .curriculum-header {
     width: 25%;
-    margin: 5% 37.5% 0 37.5%;
+    margin: 5% 40% 0 25%;
 }
 
 .curriculum-header h2 {
@@ -263,61 +347,69 @@ body {
     box-sizing: border-box;
     text-transform: uppercase;
     border: 2px solid #000;
+    font-size: 18pt;
 }
 
-.modules {
+.module-desc {
     width: 75%;
     float: left;
-    margin: 3% 5% 0 0;
-    text-align: justify;
+    padding: 3% 5% 0 0;
+    text-align: left;
+    box-sizing: border-box;
 }
 
-.modules h5 {
-    width: 10%;
+.module-desc h5 {
+    width: 15%;
     float: left;
-    margin: 0 2% 0 0;
+    padding: 0 2% 0 0;
+    box-sizing: border-box;
 }
 
-.modules p {
-    width: 88%;
+.module-desc p {
+    width: 83%;
     float: left;
 }
 
 .modules-img {
-    width: 20%;
+    width: 25%;
     float: left;
-    margin: 3% 0 0 0;
+    padding: 3% 0 0 0;
+    box-sizing: border-box;
 }
 
 .modules-img img {
     max-width: 50%;
     height: 70px;
-
 }
 
 .base-img
 {
     width: 100%;
+    /* padding: 0 0 0 27%; */
+    /* box-sizing: border-box; */
 }
 .base-img img {
-    max-width: 100vw;
+    max-width: 100%;
     height: auto;
     display:block;
-    margin:auto;
+    /* margin:auto; */
 
 }
 
 .admission-process{
     text-align: center;
+    /* padding: 0 0 0 27%; */
 }
 .admission-process p{
     display:inline-block;
     margin:auto;
     width: 50%;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
+
 .apply pre,button{
     display: inline-block;
+    /* margin-bottom: 5%; */
 }
 .button{
     background-color: rgb(255, 255, 255);
@@ -328,4 +420,194 @@ body {
     border-width: thin;
     border-radius: 5px;
     cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    html{
+        font-size: 12px;
+    }
+
+    .logo-container img {
+        max-width: 40px;
+        height: 40px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .module-desc h5{
+        width: 15%;
+    }
+    .module-desc p{
+        width: 70%;
+    }
+    .modules-img {
+        width: 20%;
+        float: left;
+        margin: 3% 0 0 0;
+    }
+    .modules-img img{
+        max-width: 100%;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .site-wrapper{
+        overflow-x: hidden;
+    }
+    
+    .container{
+        padding: 0 80px;
+        margin: 0;
+    }
+
+    .main-description {
+        width: 100%;
+        float: none;
+    }
+
+    .description-footer {
+        width: 100%;
+        padding: 0 0 7% 0;
+        margin: 7% 0 0 0;
+    }
+
+    .description-footer p{
+        text-align: center;
+    }
+
+    .apply-btn {
+        width: 100%;
+        float: none;
+    }
+
+    .apply-btn button{
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .links-container ul{
+        display: none;
+    }
+
+    .section-content{
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    
+    .main-content{
+        width: 100%;
+        padding: 5% 0 5% 0;
+    }
+
+    .module-desc h5{
+        width: 20%;
+    }
+
+    .module-desc p{
+        width: 80%;
+    }
+
+    .curriculum-header {
+        width: 60%;
+        float: none;
+        margin: 5% 20% 0 20%;
+    }
+    .curriculum-header h2{
+        padding: 2% 10%;
+    }
+}
+@media screen and (max-width: 425px){
+
+    .container{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+
+    .main-content{
+        padding: 10% 0;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    .main-description h1 {
+        font-size: 150%;
+        letter-spacing: 1;
+    }
+
+    .main-description p {
+        font-weight: 200;
+        letter-spacing: .7;
+    }
+
+    .apply-btn button{
+        padding: 10px 12px;
+        font-size: 90%;
+    }
+
+    .section-title{
+        margin: 0 0 5% 0;
+        text-align: center;
+    }
+
+    .features{
+        margin: 10% 0 0 0;
+    }
+    
+    .feature-container{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .section-dark{
+        background-color: rgba(229, 229, 229, .65);
+    }
+
+    .modules{
+        width: 100%;
+    }
+
+    .module-desc{
+        width: 100%;
+        float: none;
+        padding: 10% 0 0 0;
+    }
+
+    .module-desc h5{
+        width: 20%;
+    }
+
+    .module-desc p{
+        width: 80%;
+    }
+
+    .modules-img{
+        width: 100%;
+        float: none;
+    }
+    .modules-img img {
+        max-width: 100%;
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .admission-process p{
+        width: 75%;
+        margin: auto;
+    }
+
+    .apply pre,button, .note{
+        margin-bottom: 2%;
+    }
 }
