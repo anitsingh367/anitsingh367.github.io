@@ -1,6 +1,5 @@
 html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    ;
     font-size: 14px;
     line-height: 1.5;
     scroll-behavior: smooth;
@@ -527,3 +526,33 @@ button {
 .social-media-pages img {
     max-width: 20px;
 }
+@media screen and (max-width: 1024px){
+
+    nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: inline;
+        margin: 10px 0 0 0;
+    }
+    .curriculum-header h2{
+        padding: 5% 0.5%;
+    }
+    .arrow h2{
+        padding-left: 28px;
+    }
+    .img-block h4 {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 425px){
+    html{
+        text-align: center;
+    }
+    
+
+
+
+}
+
