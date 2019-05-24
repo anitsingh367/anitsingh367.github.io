@@ -171,7 +171,8 @@ body {
     box-sizing: border-box;
     position: sticky;
     top: 15%;
-    bottom: -15%;
+    /* bottom: -15%; */
+    margin-bottom: 7%;
 }
 
 .links-container ul {
@@ -372,6 +373,7 @@ body {
     max-width: 50%;
     height: 70px;
 }
+
 .feature-content {
 
     width: 70%;
@@ -381,32 +383,78 @@ body {
 }
 .base-img {
     width: 100%;
-    /* padding: 0 0 0 27%; */
-    /* box-sizing: border-box; */
 }
 
 .base-img img {
     max-width: 100%;
     height: auto;
-    display: block;
-    /* margin:auto; */
-
+    display:block;
 }
+
+.img-icon{
+    padding: 5% 0 0 7%;
+    box-sizing: border-box;
+}
+
+.img-container{
+    width: 20%;
+    float: left;
+    /* padding: 5% 0 0 0; */
+    /* box-sizing: border-box; */
+    /* height: 100px; */
+    /* display: block; */
+}
+
+.img-block{
+    width: 50%;
+    float: left; 
+}
+
+.img-block img{
+    padding: 20px;
+    /* height: 100px; */
+    box-sizing: border-box;
+    background-color: #000;
+    border-radius: 50%; 
+    /* vertical-align: middle; */
+}
+
+.img-block h4{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 200;
+}
+
+.arrow{
+    width: 50%;
+    float: left;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    /* margin: 0 auto; */
+    /* padding: 35px 35px; */
+    /* box-sizing: border-box; */
+    color: #666666;
+}
+
 .admission-process {
     text-align: center;
     /* padding: 0 0 0 27%; */
 }
+
 .admission-process p {
     display: inline-block;
     margin: auto;
     width: 50%;
     /* font-weight: 700; */
 }
+
 .apply pre,
 button {
     display: inline-block;
     /* margin-bottom: 5%; */
 }
+
 .button {
     background-color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -416,4 +464,66 @@ button {
     border-width: thin;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.questions {
+    width: 100%;
+    margin: 2% 0 5% 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #242424;
+}
+
+.footer-title {
+    /* width: 100%; */
+    padding: 5% 0;
+    /* margin: 0 40%; */
+    /* display: block; */
+}
+
+/* .footer-img{
+    width: 50%;
+    float: right;
+} */
+
+/* .footer-img img{
+    max-width: 40px;
+    display: inline-block;
+    float: right; 
+} */
+
+.footer-title h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+.social {
+    /* width: 100%; */
+    background-color: #000;
+    padding: 1% 0;
+}
+
+.footer-subtitle {
+    width: 80%;
+    float: left;
+}
+
+.social-media-pages {
+    width: 20%;
+    float: left;
+}
+
+.social-media-pages li {
+    width: 33.3%;
+    float: left;
+    list-style: none;
+}
+
+.social-media-pages img {
+    max-width: 20px;
 }
