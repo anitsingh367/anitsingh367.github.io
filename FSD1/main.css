@@ -380,6 +380,7 @@ body {
     margin: 0 0 0 7%;
     position: relative;
 }
+
 .base-img {
     width: 100%;
 }
@@ -387,15 +388,15 @@ body {
 .base-img img {
     max-width: 100%;
     height: auto;
-    display:block;
+    display: block;
 }
 
-.img-icon{
+.img-icon {
     padding: 5% 0 0 7%;
     box-sizing: border-box;
 }
 
-.img-container{
+.img-container {
     width: 20%;
     float: left;
     /* padding: 5% 0 0 0; */
@@ -404,27 +405,27 @@ body {
     /* display: block; */
 }
 
-.img-block{
+.img-block {
     width: 50%;
-    float: left; 
+    float: left;
 }
 
-.img-block img{
+.img-block img {
     padding: 20px;
     /* height: 100px; */
     box-sizing: border-box;
     background-color: #000;
-    border-radius: 50%; 
+    border-radius: 50%;
     /* vertical-align: middle; */
 }
 
-.img-block h4{
+.img-block h4 {
     text-align: center;
     margin-top: 15px;
     font-weight: 200;
 }
 
-.arrow{
+.arrow {
     width: 50%;
     float: left;
     line-height: 100px;
@@ -446,6 +447,9 @@ body {
     margin: auto;
     width: 50%;
     /* font-weight: 700; */
+}
+.cust2{
+    padding-left: 10px
 }
 
 .apply pre,
@@ -526,33 +530,228 @@ button {
 .social-media-pages img {
     max-width: 20px;
 }
-@media screen and (max-width: 1024px){
 
-    nav{
+@media screen and (max-width: 1024px) {
+
+    nav {
         display: none;
     }
 
-    .menu-btn{
+    .menu-btn {
         display: inline;
         margin: 10px 0 0 0;
     }
-    .curriculum-header h2{
+
+    .curriculum-header h2 {
         padding: 5% 0.5%;
     }
-    .arrow h2{
+
+    .arrow h2 {
         padding-left: 28px;
     }
+
     .img-block h4 {
         margin-left: 15px;
     }
 }
-@media screen and (max-width: 425px){
-    html{
+
+@media screen and (max-width: 425px) {
+    html {
         text-align: center;
     }
-    
+
+    .home {
+        height: auto;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .links-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .links-container ul {
+        display: none;
+    }
+
+    .section-content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .container1 {
+        padding: 0px 3%;
+    }
+
+    .section-title {
+        text-align: center;
+        padding: 5% 0 0 0;
+    }
+
+    .section-heading p {
+        text-align: center;
+    }
+
+    .features {
+        margin: 4% 0 0 10%;
+    }
+
+    .item {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .feature-description {
+        width: 75%;
+    }
+
+    .section-dark {
+        margin: 5% 0 0 0;
+        padding: 0 0 5% 0;
+    }
+
+    .curriculum-header {
+        width: 50%;
+        margin: 5% 0 0 25%;
+    }
+
+    .curriculum-header h2 {
+        padding: 2% 0%;
+        font-size: 18pt;
+    }
+
+    .modules {
+        margin: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .module-desc {
+        padding: 3% 0 0 0;
+    }
+
+    .module-desc h5 {
+        width: 23%;
+        padding: 0;
+    }
+
+    .module-desc p {
+        text-align: right;
+        width: 77%;
+        font-weight: normal;
+    }
+
+    .modules-img img {
+        max-width: 80%;
+        height: 60px;
+    }
+
+    .center {
+        text-align: right;
+    }
+
+    /* .container{
+        padding: 0 2%;
+    } */
+    .description {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-description {
+        width: 100%;
+    }
+
+    .main-description h1 {
+        font-size: 200%;
+        margin: 10% 0 0 0;
+    }
+
+    .main-description p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .description-footer {
+        margin: 10% 0 0 0;
+    }
+
+    .description-footer pre {
+        margin: 5%;
+    }
+
+    .header-wrapper {
+        padding: 20px 0 0 0;
+    }
+
+    .logo-container {
+        width: 0%;
+    }
+
+    .logo-container img {
+        height: 40px;
+    }
+
+    .menu-btn {
+        top: 3px;
+        right: 0px;
+    }
+
+    .img-icon {
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .admission-process p {
+        width: 75%;
+    }
+
+    .admission-process h1 {
+        font-size: 31.5px;
+    }
+
+    .img-block img {
+        background-color: transparent;
+        border-radius: 0%;
+        filter: invert(1);
+        padding: 20px 10px 20px 10px;
+    }
+    .img-block h4{
+        margin-left: 30%;
+        margin-top: 0;
+    }
+    .arrow{
+        line-height: 90px;
+    }
+    .arrow h2{
+        padding-left: 80%;
+    }
+    .cust2{
+        padding: 0;
+        text-align: center;
+    }
+    .footer-subtitle{
+        display: none;
+    }
+    .social-media-pages{
+        width: 100%;
+    }
+
 
 
 
 }
-
