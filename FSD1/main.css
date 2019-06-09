@@ -685,7 +685,7 @@ button {
     }
 
     .description-footer pre {
-        margin: 5%;
+        margin: 5% 0;
     }
 
     .header-wrapper {
