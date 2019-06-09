@@ -4,6 +4,9 @@ html {
     line-height: 1.5;
     scroll-behavior: smooth;
 }
+pre{
+    max-width: 100%;
+}
 
 * {
     margin: 0;
