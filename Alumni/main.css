@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f8f8;
+}
+
+.section1 {
+    /* margin: auto; */
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner2.jpg"), linear-gradient(black, grey);
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+.navbar {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main-nav {
+    list-style-type: none;
+    position: absolute;
+    z-index: 100000;
+    background-color: #f6f8f8;
+    width: 100%;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.logo img {
+    max-height: 70px;
+    max-width: 70px;
+}
+.description {
+    position: absolute;
+    color: white;
+    top: 34%;
+    left: 40.35%;
+    transform: translate(-50%, -50%);
+}
+
+#desc {
+    opacity: 0;
+    animation: fadeIn 3s ease-in both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.section2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.tile {
+    position: relative;
+}
+
+.tile h3 {
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(94, 97, 109);
+    font-family: lato, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 36px;
+    margin-top: 50px;
+
+
+}
+h3:after {
+    position: absolute;
+    background: none repeat scroll 0 0 rgb(94, 97, 109);;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100px;
+    right: 37%;
+    opacity: 0.5;
+}
+
+.cards {
+    width: 100%;
+    position: relative;
+}
+
+.a {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    text-align: left;
+    border-radius: 3px;
+    background: white;
+    padding: 60px 30px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(252, 252, 253);
+    border-image: initial;
+    margin: 68px 7px 0px;
+}
+
+.b {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    left: 0px;
+}
+
+.c {
+    background-image: url("246.jpg");
+    width: 115px;
+    height: 95px;
+    background-size: cover;
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(243, 245, 248);
+    border-image: initial;
+    background-position: center top;
+    margin: 0px auto;
+}
+
+.d {
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
+
+.e {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(172, 177, 188);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    opacity: 1;
+    margin: 0px;
+}
+
+.f {
+    text-align: center;
+    margin: 13px 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.f li {
+    display: inline-block;
+    width: 20px;
+    margin: 0px 15px;
+}
+
+li *:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+.f svg {
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+
+.g {
+    position: relative;
+    width: 100%;
+    min-width: 400px;
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.cards {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .section1 {
+        /* margin: auto; */
+        text-align: center;
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner2.jpg"), linear-gradient(black, grey);
+        background-repeat: no-repeat;
+        background-size: 100% 90vh;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .logo img {
+        vertical-align: middle;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: orange;
+        transition: ease-in 0.2s;
+    }
+
+    .description {
+        position: absolute;
+        color: white;
+        top: 58%;
+        left: 48.7%;
+        transform: translate(-50%, -50%);
+    }
+
+    #desc {
+        opacity: 0;
+        animation: fadeIn 3s ease-in both;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -20%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .section2 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tile {
+        position: relative;
+    }
+
+    .tile h3 {
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+        color: rgb(94, 97, 109);
+        font-family: lato, sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 36px;
+
+
+    }
+    h3:after {
+        position: absolute;
+        background: none repeat scroll 0 0 rgb(94, 97, 109);;
+        bottom: -10px;
+        content: "";
+        display: block;
+        height: 10px;
+        width: 100px;
+        right: 46%;
+        opacity: 0.5;
+    }
+
+    .cards {
+        width: 100%;
+        position: relative;
+    }
+
+    .a {
+        display: inline-block;
+        width: 100%;
+        max-width: 300px;
+        position: relative;
+        text-align: left;
+        border-radius: 3px;
+        background: white;
+        padding: 60px 30px 30px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(252, 252, 253);
+        border-image: initial;
+        margin: 68px 7px 0px;
+    }
+
+    .b {
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        left: 0px;
+    }
+
+    .c {
+        background-image: url("246.jpg");
+        width: 115px;
+        height: 95px;
+        background-size: cover;
+        border-radius: 50px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(243, 245, 248);
+        border-image: initial;
+        background-position: center top;
+        margin: 0px auto;
+    }
+
+    .d {
+        -webkit-font-smoothing: antialiased;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .e {
+        -webkit-font-smoothing: antialiased;
+        color: rgb(172, 177, 188);
+        font-size: 14px;
+        text-align: center;
+        font-weight: 300;
+        opacity: 1;
+        margin: 0px;
+    }
+
+    .f {
+        text-align: center;
+        margin: 13px 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .f li {
+        display: inline-block;
+        width: 20px;
+        margin: 0px 15px;
+    }
+
+    li *:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    .f svg {
+        opacity: 0.5;
+        transition-duration: 0.3s;
+    }
+
+    .g {
+        position: relative;
+        width: 100%;
+        min-width: 400px;
+        text-align: center;
+        flex: 1 1 30%;
+    }
+
+    .cards {
+        position: relative;
+        padding: 100px 100px;
+        overflow: hidden;
+    }
+}
