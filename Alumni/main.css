@@ -114,6 +114,7 @@ h3:after {
     width: 100px;
     right: 37%;
     opacity: 0.5;
+    border-radius: 30px;
 }
 
 .cards {
@@ -257,6 +258,7 @@ a {
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
+        position: relative;
     }
 
     .main-nav li {
@@ -339,6 +341,7 @@ a {
         width: 100px;
         right: 46%;
         opacity: 0.5;
+        border-radius: 30px;
     }
 
     .cards {
