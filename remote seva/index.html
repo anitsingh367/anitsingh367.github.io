@@ -12,30 +12,56 @@
 </head>
 
 <body>
-    <h1>Welcome to Remote Seva Portal</h1>
-    <a class="waves-effect waves-light btn-large button"><i class="material-icons left">add</i>New Patient</a>
-    <ul class="collapsible button1">
-        <li>
-            <div class="collapsible-header"><i class="material-icons">face</i>Existing Patient</div>
-            <div class="collapsible-body">
-                <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Enter yout ID</label>
-                    <a class="waves-effect waves-light btn-small">Submit</a>
-                    
+    <section class="section1">
+        <h1>Welcome to Remote Seva Portal</h1>
+        <a class="waves-effect waves-light btn-large modal-trigger button" href="#modal1"><i
+                class="material-icons left">add</i>New Patient</a>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Choose your Age</option>
+                                <option value="1">1-10</option>
+                                <option value="2">11-20</option>
+                                <option value="3">21-30</option>
+                            </select>
+                        </div>
+                        <div class="col s12">
+                            <a class="waves-effect waves-light btn-large button"><i
+                                    class="material-icons left">cloud</i>Register</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </li>
-    </ul>
+            <!-- <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div> -->
+        </div>
+        <ul class="collapsible button1">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">face</i>Existing Patient</div>
+                <div class="collapsible-body">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Enter your ID</label>
+                        <a id="btn" class="waves-effect waves-light btn-small">Submit</a>
 
-
-
-
-
-
-
-
-
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="main.js"></script>
 

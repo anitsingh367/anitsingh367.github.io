@@ -4,24 +4,26 @@
 
 }
 
-body {
+.section1{
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100vh;
 }
 h1{
     align-self: center;
+    /* order: 1; */
 }
 
 .button {
     /* order: 2; */
     /* flex-grow: 2; */
     /* max-width:  */
-    align-self: center;
+    align-self: center !important;
     flex-grow: 0 !important;
     flex-shrink: 0 !important;
-    flex-basis: 50% !important;
+    /* flex-basis: 50% !important; */
 }
 .button1{
      margin: 5% 25% 0 25%;
