@@ -70,15 +70,26 @@ async function initJsStore() {
     }
 
 }
-async function addPatient(patient){
+async function addPatient(patient) {
     var value = patient
     var noOfDataInserted = await connection.insert({
         into: 'userInfo',
         values: [value]
     });
     if (noOfDataInserted > 0) {
-        alert('successfully added');
+        alert('successfully added with id ' + patient.id);
     }
+}
+async function getpatient(p_id){
+    var results = await connection.select({
+        from: 'userInfo',
+        where: {
+            id: p_id
+        }
+    });
+    alert(results.length + ' record found');
+    console.log(results)
+    
 }
 // }
 
@@ -103,15 +114,24 @@ document.getElementById("regBtn").addEventListener("click", function () {
         Age: Age
     }
     addPatient(value);
-    frstName.value= "";
+    frstName.value = "";
     lstName.value = "";
     e.value = "";
     document.querySelectorAll('select').forEach(function (elems) {
         M.FormSelect.init(elems);
     });
-    
+
 
 });
 
-
 //}
+document.getElementById("btnSubmit").addEventListener("click", function() {
+
+    var id = document.getElementById('entID');
+    if(id.value == null || id.value.trim().length == 0){
+        return;
+    } 
+    console.log(id.value);
+    getpatient(Number(id.value.trim()));
+
+});
